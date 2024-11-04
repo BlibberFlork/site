@@ -63,85 +63,8 @@
         align-items: center;
         display: flex; /* To center the iframe vertically and horizontally */
         opacity:100%
-    }
-
-    .frame {
-        width: 100%;
-        height: 100%;
-        border: none; /* Removed unnecessary border styling */
-    }
+    
 </style>
-     <script>
-        //blackjack
-        //solitaire            https://www.google.com/logos/fnbx/solitaire/standalone.3.html?hl=en
-            
-        // Store the iframe's original src so we can reload it later
-        var iframeSoliSrc = src="https://www.google.com/logos/fnbx/solitaire/standalone.3.html?hl=en";
-        var iframeBlaSrc = src="https://dungeonsdegenerategamblers.com/dungeons-degenerate-gamblers/";
-        var iframeMineSrc = src="https://research.google.com/semantris/";
-        var iframePacSrc = src="https://freepacman.org/";
-            
-
-        // Function to stop the iframe (clear its src)
-        function stopIframe() {
-            var iframe = document.getElementById('theFrame');
-            iframe.src = "";  // This will effectively stop the iframe
-        }
-         function yeScroll() {
-            var iframe = document.getElementById('theFrame');
-            iframe.scrolling = "yes";  // This will effectively stop the iframe
-        }
-         function neScroll() {
-            var iframe = document.getElementById('theFrame');
-            iframe.scrolling = "no";  // This will effectively stop the iframe
-        }
-
-        // Function to start the iframe again (restore the original src)
-        function startSoliIframe() {
-            var iframe = document.getElementById('theFrame');
-            iframe.src = iframeSoliSrc;  // Restore the original src to reload the iframe
-        }
-         function startBlaIframe() {
-            var iframe = document.getElementById('theFrame');
-            iframe.src = iframeBlaSrc;  // Restore the original src to reload the iframe
-        }
-         function startMineIframe() {
-            var iframe = document.getElementById('theFrame');
-            iframe.src = iframeMineSrc;  // Restore the original src to reload the iframe
-        }
-         function startPacIframe() {
-            var iframe = document.getElementById('theFrame');
-            iframe.src = iframePacSrc;  // Restore the original src to reload the iframe
-        }
-    </script>
-
-<body>
-    <div class="popup" id="popup">
-        <button style="height:30px;width:50px;position:absolute;top:50%;right:7%;color:black;" onclick="toggleSecret();stopIframe();">Close</button>
-        <button style="height:30px;width:50px;position:absolute;top:45%;left:7%;color:black;" onclick="startPacIframe();neScroll();">Pacman</button>
-        <button style="height:30px;width:50px;position:absolute;top:50%;left:7%;color:black;" onclick="startSoliIframe();neScroll();">Solitaire</button>
-        <button style="height:30px;width:50px;position:absolute;top:55%;left:7%;color:black;" onclick="startBlaIframe();yeScroll();">Blackjack</button>
-        <button style="height:30px;width:50px;position:absolute;top:60%;left:7%;color:black;" onclick="startMineIframe();neScroll();">Minesweeper</button>
-    <div class="box">
-        
-        
-        <iframe id="theFrame" class="frame" src="" frameborder="0" scrolling="no" loading="lazy"></iframe>
-    </div>
-    </div>
-    <script>
-        popup.style.display = 'none';
-        // Toggles the popup visibility
-        function toggleSecret() {
-            const popup = document.getElementById('popup');
-            
-            if (popup.style.display === 'none' || popup.style.display === '') {
-                popup.style.display = 'block';
-            } else {
-                popup.style.display = 'none';
-            }
-        }
- 
-    </script>
 
     
 
