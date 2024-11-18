@@ -22,7 +22,6 @@
     <p>SteamDB=S</p>
     <p>Photopea=P</p>
     <p>Duolingo=U</p>
-    <p>Kata=K</p>
     <p>Codepen=1</p>
     <p>VScode=2</p>
     <p>W3=3</p>
@@ -70,7 +69,7 @@
 
   <style>
     .info {
-      color: #96ceb4;
+   color: #96ceb4;
   -webkit-user-select: none;
   -ms-user-select: none; 
   user-select: none; 
@@ -1247,18 +1246,20 @@ body * {
 
 
 <script>
-	console.log("other()");
-	console.log("pc()");
-	console.log("warframe()");
-	console.log("game()");
-	console.log("gamesites()");
+	console.log("kata()");
 	
-	function warframe() {
-	window.open("https://tezz-1.github.io/warframe/", "_blank");
-}
-	function pc() {
-	window.open("https://tezz-1.github.io/pc/", "_blank");
-}
+	function kata() {
+	window.open("https://www.sportdata.org/karate/ausschreibungen/977/WKF%20Liste%20de%20Kata.pdf", "_blank");
+}	
+
+
+ document.addEventListener('keydown', function(event) {
+            if (event.key === 'Backspace') {
+                event.preventDefault();
+                window.location.href = 'https://tezz-1.github.io/pc/';  
+            }
+        });
+
 document.addEventListener("keypress", function(Bing) {
   if (event.key === "b" || event.key === "B") {
     window.open("https://www.bing.com/", "_blank");
@@ -1367,11 +1368,6 @@ document.addEventListener("keypress", function(map) {
         document.addEventListener("keypress", function(map) {
   if (map.key === "v" || map.key === "V") {
     window.open("https://drive.google.com/drive/u/0/home", "_blank");
-  }
-});
-	document.addEventListener("keypress", function(map) {
-  if (map.key === "k" || map.key === "K") {
-    window.open("https://www.sportdata.org/karate/ausschreibungen/977/WKF%20Liste%20de%20Kata.pdf", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
