@@ -59,12 +59,12 @@
     
 
   <style>
-    .info {
-   color: #96ceb4;
+  .info {
+  color: #96ceb4;
   -webkit-user-select: none;
   -ms-user-select: none; 
   user-select: none; 
-    }
+  }
 
 .prevent-select {
   -webkit-user-select: none; /* Safari */
@@ -901,14 +901,14 @@ buttons.forEach(button => {
         <li>
           <div class="placeholder">
             <div class="upside">
-              <a target="_blank" class="buton"><div class="inTheWay"><img src="aniknots.png" onclick="window.open('https://www.animatedknots.com/')" style="pointer-events: auto; z-index:12; height: 50px; width: 53px;"></div></a>
+              <a target="_blank" class="buton"><div class="inTheWay"><img src="" onclick="window.open('')" style="pointer-events: auto; z-index:12; height: 50px; width: 53px;"></div></a>
             </div>
           </div>
         </li>
         <li>
           <div class="placeholder">
             <div class="upside">
-              <a target="_blank" class="buton"><div class="inTheWay"><img src="netknots.jpg" onclick="window.open('https://www.netknots.com/')" style="pointer-events: auto; z-index:12; height: 50px; width: 53px;"></div></a>
+              <a target="_blank" class="buton"><div class="inTheWay"><img src="" onclick="window.open('')" style="pointer-events: auto; z-index:12; height: 50px; width: 53px;"></div></a>
             </div>
           </div>
         </li>
@@ -1242,6 +1242,11 @@ body * {
 	function kata() {
 	window.open("https://www.sportdata.org/karate/ausschreibungen/977/WKF%20Liste%20de%20Kata.pdf", "_blank");
 }	
+  function knot() {
+    window.open("https://www.animatedknots.com/", "_blank");
+    window.open("https://www.netknots.com/", "_blank");
+
+  }
 
 
  document.addEventListener('keydown', function(event) {
