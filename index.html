@@ -7,27 +7,17 @@
     <p>Work=Q</p>
     <p>Drive=V</p>
     <p>Weather=W</p>
+    <p>Photopea=P</p>
     <p>BlackScreen=E</p>
-    <p>HuggingFace=H</p>
-    <p>Craiyon=D</p>
-    <p>Rytr=R</p>
+    <p>SteamDB=S</p>
+    <p>GameJolt=J</p>
+    <p>Itch=I</p>
+    <p>Maps=M</p>
     <p>CGpt=C</p>
     <p>Copilot=O</p>
     <p>Gemini=N</p>
     <p>Google=G</p>
     <p>Bing=B</p>
-    <p>Maps=M</p>
-    <p>Itch=I</p>
-    <p>GameJolt=J</p>
-    <p>SteamDB=S</p>
-    <p>Photopea=P</p>
-    <p>Duolingo=U</p>
-    <p>Codepen=1</p>
-    <p>VScode=2</p>
-    <p>W3=3</p>
-    <p>Icons=4</p>
-    <p>Bitly=5</p>
-    <p>Coolor=6</p>
     
   
   </div>
@@ -1261,28 +1251,18 @@ body * {
             }
         });
 
-document.addEventListener("keypress", function(Bing) {
-  if (event.key === "b" || event.key === "B") {
+document.addEventListener("keypress", function(map) {
+  if (map.key === "b" || map.key === "B") {
     window.open("https://www.bing.com/", "_blank");
   }
 });
-document.addEventListener("keypress", function(Google) {
-  if (Google.key === "g" || Google.key === "G") {
+document.addEventListener("keypress", function(map) {
+  if (map.key === "g" || map.key === "G") {
     window.open("https://www.google.com/", "_blank");
   }
 });
-document.addEventListener("keypress", function(craiyon) {
-  if (craiyon.key === "d" || craiyon.key === "D") {
-    window.open("https://www.craiyon.com/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(rytr) {
-  if (rytr.key === "r" || rytr.key === "R") {
-    window.open("https://app.rytr.me/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(gpt) {
-  if (gpt.key === "c" || gpt.key === "C") {
+document.addEventListener("keypress", function(map) {
+  if (map.key === "c" || map.key === "C") {
     window.open("https://chat.openai.com/", "_blank");
   }
 });
@@ -1295,11 +1275,6 @@ close();
 document.addEventListener("keypress", function(map) {
   if (map.key === "m" || map.key === "M") {
     window.open("https://www.google.ca/maps", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "1") {
-    window.open("https://codepen.io", "_blank");
   }
 });
 document.addEventListener("keypress", function(map) {
@@ -1318,38 +1293,8 @@ document.addEventListener("keypress", function(map) {
   }
 });
 document.addEventListener("keypress", function(map) {
-  if (map.key === "h" || map.key === "H") {
-    window.open("https://huggingface.co/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "3") {
-    window.open("https://www.w3schools.com/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
   if (map.key === "n" || map.key === "N") {
     window.open("https://gemini.google.com/app", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "2") {
-    window.open("https://vscode.dev", "_blank");
-  }
-});
-    document.addEventListener("keypress", function(map) {
-  if (map.key === "4") {
-    window.open("https://fontawesome.com/icons", "_blank");
-  }
-});
-    document.addEventListener("keypress", function(map) {
-  if (map.key === "5") {
-    window.open("https://app.bitly.com/", "_blank");
-  }
-});
-	document.addEventListener("keypress", function(map) {
-  if (map.key === "6") {
-    window.open("https://coolors.co/", "_blank");
   }
 });
         document.addEventListener("keypress", function(map) {
@@ -1365,11 +1310,6 @@ document.addEventListener("keypress", function(map) {
     document.addEventListener("keypress", function(map) {
   if (map.key === "w" || map.key === "W") {
     window.open("https://www.theweathernetwork.com/en", "_blank");
-  }
-});
-        document.addEventListener("keypress", function(map) {
-  if (map.key === "u" || map.key === "U") {
-    window.open("https://www.duolingo.com/", "_blank");
   }
 });
         document.addEventListener("keypress", function(map) {
