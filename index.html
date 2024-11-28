@@ -10,6 +10,7 @@
     <p>Photopea=P</p>
     <p>BlackScreen=E</p>
     <p>SteamDB=S</p>
+    <p>PlayStore=L</p>
     <p>GameJolt=J</p>
     <p>Itch=I</p>
     <p>Maps=M</p>
@@ -1334,6 +1335,11 @@ document.addEventListener("keypress", function(map) {
 	document.addEventListener("keypress", function(map) {
   if (map.key === "e" || map.key === "E") {
     window.open("https://www.whitescreen.online/black-screen/", "_blank");
+  }
+});
+	document.addEventListener("keypress", function(map) {
+  if (map.key === "l" || map.key === "L") {
+    window.open("https://play.google.com/", "_blank");
   }
 });
 </script>
