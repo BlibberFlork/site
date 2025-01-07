@@ -19,6 +19,8 @@
     <p>Gemini=N</p>
     <p>Google=G</p>
     <p>Bing=B</p>
+    <p>Code=></p>
+    <p>?</p>
     
   
   </div>
@@ -1283,6 +1285,16 @@ close();
   }
 });
 document.addEventListener("keypress", function(map) {
+  if (map.key === ">" ) {
+    window.open("https://tezz-1.github.io/code/", "_blank");
+  }
+});
+	document.addEventListener("keypress", function(map) {
+  if (map.key === "?" ) {
+    window.open("https://tezz-1.github.io/-/", "_blank");
+  }
+});
+	document.addEventListener("keypress", function(map) {
   if (map.key === "m" || map.key === "M") {
     window.open("https://www.google.ca/maps", "_blank");
   }
