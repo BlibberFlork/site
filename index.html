@@ -71,9 +71,9 @@
   <style>
   .info {
   color: #96ceb4;
-  -webkit-user-select: none;
-  -ms-user-select: none; 
-  user-select: none; 
+  -webkit-user-select:none;
+  -ms-user-select:none; 
+  user-select:none; 
   }
 
 .prevent-select {
@@ -435,8 +435,8 @@ function setupCanvas() {
   
     <menu class="items-wrapper">
       <a href="https://steamrip.com/" target="_blank" class="menu-item steamRip"></a>
+      <a href="https://gog-games.to/" target="_blank" class="menu-item gogUn"></a>
       <a href="https://steamunlocked.net/" target="_blank" class="menu-item steamUn"></a>
-      <a href="https://crackwatcher.com/" target="_blank" class="menu-item gogUn"></a>
       <a href="https://archive.org/" target="_blank" class="menu-item intArc"></a>
     </menu>
   
@@ -452,7 +452,7 @@ function setupCanvas() {
     <menu class="items-wrapper">
       <a href="https://cpstest.org/" target="_blank" class="menu-item upDown"></a>
       <a href="https://romspure.cc/" target="_blank" class="menu-item pureRom"></a>
-      <a href="https://romsfun.com/" target="_blank" class="menu-item funRom"></a>
+      <a href="https://crocdb.net" target="_blank" class="menu-item croc"></a>
       <a href="https://www.ziperto.com/home/" target="_blank" class="menu-item ziperto"></a>
     </menu>
   
@@ -462,7 +462,9 @@ function setupCanvas() {
 
 .ziperto {
   background-image: url(ziperto.jpg);
-  background-size: 100% 100%;
+  background-size: 75%;
+  background-position: center;
+  background-repeat:no-repeat;
 }
 
 .pureRom {
@@ -470,14 +472,16 @@ function setupCanvas() {
   background-size: 100% 100%;
 }
 
-.funRom {
-  background-image: url(funrom.png);
+.croc {
+  background-image: url(croc.png);
   background-size: 100% 100%;
 }
 
 .gogUn {
-  background-image: url(crackwatch.jpg);
-  background-size: 100% 100%;
+  background-image: url(gog.jpg);
+  background-size: 170% 100%;
+  background-position: center;
+  background-repeat:no-repeat;
 }
 
 .intArc {
@@ -1250,19 +1254,23 @@ body * {
 
 <script>
 	console.log("kata()");
+  console.log("katalist()");
   console.log("knot()");
-  console.log("patreon()");
+  console.log("knotalt()");
 	
 	function kata() {
 	window.open("https://www.sportdata.org/karate/ausschreibungen/977/WKF%20Liste%20de%20Kata.pdf", "_blank");
 }	
   function knot() {
     window.open("https://www.animatedknots.com/", "_blank");
+  }
+  function katalist() {
+	window.open("https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltd17b0a7475812b59/64c14450d85ca635fc76fadc/WKF_Official_Kata_List_01.2023.pdf", "_blank");
+}	
+  function knotalt() {
     window.open("https://www.netknots.com/", "_blank");
   }
-  function patreon() {
-    window.open("https://www.patreon.com/home", "_blank");
-  }
+
 
 
  document.addEventListener('keydown', function(event) {
