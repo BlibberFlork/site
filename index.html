@@ -22,9 +22,7 @@
     <p>Maps=M</p>
     <p>CGpt=H</p>
     <p>Copilot=C</p>
-    <p>Gemini=N</p>
-    <p>Google=G</p>
-    <p>Bing=B</p>
+    <p>Yandex=Y</p>
     <p>Code=O</p>
     <p>?</p>
     
@@ -2419,13 +2417,8 @@ body * {
         });
 
 document.addEventListener("keypress", function(map) {
-  if (map.key === "b" || map.key === "B") {
-    window.open("https://www.bing.com/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "g" || map.key === "G") {
-    window.open("https://www.google.com/", "_blank");
+  if (map.key === "y" || map.key === "Y") {
+    window.open("https://www.yandex.com/", "_blank");
   }
 });
 document.addEventListener("keypress", function(map) {
@@ -2462,11 +2455,6 @@ document.addEventListener("keypress", function(map) {
 	document.addEventListener("keypress", function(map) {
   if (map.key === "9") {
     window.open("https://webcammictest.com/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "n" || map.key === "N") {
-    window.open("https://gemini.google.com/app", "_blank");
   }
 });
         document.addEventListener("keypress", function(map) {
