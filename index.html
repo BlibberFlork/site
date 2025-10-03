@@ -2437,6 +2437,7 @@ document.addEventListener("keypress", function(map) {
 });
 	document.addEventListener("keypress", function(map) {
   if (map.key === "Tab" ) {
+	  map.preventDefault();
     window.open("https://blibberflork.github.io/game/", "_blank");
   }
 });
