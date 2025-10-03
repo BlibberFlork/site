@@ -4,28 +4,25 @@
 <body><div class="info" style="position: absolute;text-align: right;line-height: .5%;font-size: 10px;width: 99.4%">
 
     <p>Backspace=NextSite</p>
-
+	<p>Games=Tab</p>
 	<p>Notion=Enter</p>
     <p>SpeedTest=0</p>
-    <p>SpeedTest2=-</p>
     <p>MicTest=9</p>
+	<p>Virus=1</p>
 	<p>CPS=K</p>
-    <p>Virus=1</p>
     <p>Work=Q</p>
     <p>FMHY=F</p>
-    <p>Drive=V</p>
+    <p>Cloud=V</p>
     <p>Weather=W</p>
-    <p>Photopea=P</p>
     <p>VideoCNV=I</p>
+	<p>Photopea=P</p>
     <p>BlackScreen=E</p>
-    <p>SteamDB=S</p>
     <p>PlayStore=L</p>
     <p>Maps=M</p>
     <p>CGpt=H</p>
     <p>Copilot=C</p>
     <p>Yandex=Y</p>
-    <p>Code=O</p>
-    <p>?</p>
+    <p>Code=?</p>
     
   
   </div>
@@ -2434,23 +2431,18 @@ close();
   }
 });
 document.addEventListener("keypress", function(map) {
-  if (map.key === "o" || map.key === "O") {
+  if (map.key === "/" || map.key === "?") {
     window.open("https://blibberflork.github.io/code/", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
-  if (map.key === "?" ) {
+  if (map.key === "Tab" ) {
     window.open("https://blibberflork.github.io/game/", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
   if (map.key === "m" || map.key === "M") {
     window.open("https://www.google.ca/maps", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
-  if (map.key === "0") {
-    window.open("https://www.speedtest.net/", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
@@ -2463,11 +2455,7 @@ document.addEventListener("keypress", function(map) {
     window.open("https://www.photopea.com/", "_blank");
   }
 });
-        document.addEventListener("keypress", function(map) {
-  if (map.key === "s" || map.key === "S") {
-    window.open("https://steamdb.info/", "_blank");
-  }
-});
+    
     document.addEventListener("keypress", function(map) {
   if (map.key === "w" || map.key === "W") {
     window.open("https://www.theweathernetwork.com/en", "_blank");
@@ -2475,7 +2463,7 @@ document.addEventListener("keypress", function(map) {
 });
         document.addEventListener("keypress", function(map) {
   if (map.key === "v" || map.key === "V") {
-    window.open("https://drive.google.com/drive/u/0/home", "_blank");
+    window.open("https://www.febbox.com/console", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
@@ -2499,7 +2487,7 @@ document.addEventListener("keypress", function(map) {
   }
 });
 	document.addEventListener("keypress", function(map) {
-  if (map.key === "-") {
+  if (map.key === "0") {
     window.open("https://speed.cloudflare.com/", "_blank");
   }
 });
