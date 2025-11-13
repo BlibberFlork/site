@@ -10,6 +10,7 @@
 	<p>MicTest=9</p>
 	<p>SpeedTest=0</p>
     <p>Notion=Enter</p>
+	<p>Drawing=D</p>
 	<p>FMHY=F</p>
 	<p>CPS=K</p>
     <p>Cloud=V</p>
@@ -2501,6 +2502,11 @@ document.addEventListener("keypress", function(map) {
 	document.addEventListener("keypress", function(map) {
   if (map.key === "Enter") {
     window.open("https://www.notion.so/", "_blank");
+  }
+});
+	document.addEventListener("keypress", function(map) {
+  if (map.key === "d" || map.key === "D") {
+    window.open("https://excalidraw.com/", "_blank");
   }
 });
 </script>
