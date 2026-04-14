@@ -5,11 +5,12 @@
 
     <p>Apps=Backspace</p>
 	<p>Games=Tab</p>
+	<p>Xbox=X</p>
 	<p>Work=Q</p>
 	<p>Virus=1</p>
 	<p>MicTest=9</p>
 	<p>SpeedTest=0</p>
-    <p>Notion=Enter</p>
+    <p>Planner=Enter</p>
 	<p>Drawing=D</p>
 	<p>FMHY=F</p>
 	<p>CPS=K</p>
@@ -21,8 +22,6 @@
     <p>BlackScreen=E</p>
     <p>PlayStore=L</p>
     <p>Maps=M</p>
-    <p>CGpt=H</p>
-    <p>Copilot=B</p>
     <p>Yandex=Y</p>
     <p>Code=?</p>
     
@@ -2413,11 +2412,6 @@ document.addEventListener("keypress", function(map) {
   }
 });
 document.addEventListener("keypress", function(map) {
-  if (map.key === "h" || map.key === "H") {
-    window.open("https://chat.openai.com/", "_blank");
-  }
-});
-document.addEventListener("keypress", function(map) {
   if (map.key === "q" || map.key === "Q") {
     window.open("https://blibberflork.github.io/work/", "_blank");
 close();
@@ -2467,11 +2461,6 @@ document.addEventListener("keypress", function(map) {
   }
 });
 	document.addEventListener("keypress", function(map) {
-  if (map.key === "b" || map.key === "B") {
-    window.open("https://copilot.microsoft.com/", "_blank");
-  }
-});
-	document.addEventListener("keypress", function(map) {
   if (map.key === "e" || map.key === "E") {
     window.open("https://www.whitescreen.online/black-screen/", "_blank");
   }
@@ -2508,11 +2497,16 @@ document.addEventListener("keypress", function(map) {
 });
 	document.addEventListener("keypress", function(map) {
   if (map.key === "Enter") {
-    window.open("https://www.notion.so/", "_blank");
+    window.open("https://journalit.app/", "_blank");
   }
 });
 	document.addEventListener("keypress", function(map) {
   if (map.key === "d" || map.key === "D") {
+    window.open("https://excalidraw.com/", "_blank");
+  }
+});
+	document.addEventListener("keypress", function(map) {
+  if (map.key === "x" || map.key === "X") {
     window.open("https://excalidraw.com/", "_blank");
   }
 });
